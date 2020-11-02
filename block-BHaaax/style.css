@@ -52,11 +52,16 @@ table {
 box-sizing: border-box;
 }
 
+.header {
+    font-size: 0;
+    padding: 16px 0;
+}
 body{
     background-color: aquamarine;
     font-size: 24px;
+    line-height: 1.5;
 }
-header, aside, section, footer {
+aside, section, footer {
     padding: 50px;
     border-radius: 8px ;
     text-align: center;
@@ -64,34 +69,49 @@ header, aside, section, footer {
 }
 aside, section {
     background-color: #30BA66;
-    padding: 100px;
     display: inline-block;
+    width: 45%;
     }
 header, footer{
     background-color: #6d83b1;
 }
-aside {
-    width: 45%;
-}
-section {
-    width: 45%;
-}
-.brand {
-    text-align: left;
-}
-.topnav{
-    text-align: right;
-    
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
+
 h1{
     font-size: 32px;
-    
-}
+    }
 img {
 width: 1000px;
-height: 390px;
+height: 365px;
 }
+.brand img{
+    width: 100px;
+    height: 100px;
+}
+.container {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+}
+.brand, 
+.topnav {
+    display: inline-block;  
+    vertical-align: middle;
+}
+.topnav {
+    width: calc(100% - 180px);
+    font-size: 16px;
+    text-align: right;
+}
+
+.topnav a{
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+.topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
