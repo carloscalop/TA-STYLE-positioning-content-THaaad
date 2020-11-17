@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Customer Styles */
+body {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.container {
+	max-width: 2000px;
+	margin: 0 10px;
+	padding: 0 32px;
+}
+/* Header */
+header{
+	line-height: 86.5px;
+}
+img {
+	width:80px;
+	height: 80px;
+}
+img,
+.nav {
+	display: inline-block;
+}
+
+.imgcolumn{
+	width:280px;
+	height:180px;
+	display: block;
+	margin: 0 auto;
+}
+
+.nav {
+	
+	font-size: 16px;
+	text-align: right;
+	float: right;
+}
+
+.nav a {
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 32px;
+}
+
+.columns{
+	display: inline-block;
+
+}
+.column1{
+	float: left;
+	width: 540px;
+    height: 550px;
+    padding: 20px;
+    font-size: x-large;
+    color: white;
+    background-color: #FE5349;
+    margin: 26px 0 0 26px;
+    	}
+.column2{
+	float: left;
+    width: 540px;
+    height: 550px;
+    padding: 20px;
+    font-size: x-large;
+    color: white;
+    background-color: #0C8871 ;
+    margin: 26px 0 0 26px;
+}
+.column3{
+	float: left;
+	width: 540px;
+    height: 550px;
+    padding: 20px;
+    font-size: x-large;
+    color: white;
+	background-color: #B601FF;
+	margin: 26px 0 0 26px;
+	}
+	/* Footer */
+	
+	.footer{
+		text-align: center;
+		padding: 32px 0;
+		background-color: gray;
+	}
+	.footer a{
+		margin: 0 16px;
+		color: aquamarine;
+	}
