@@ -48,91 +48,96 @@ table {
 }
 
 /* Customer Styles */
+*;
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 body {
 	font-size: 16px;
 	line-height: 1.5;
 }
-.container {
-	max-width: 2000px;
-	margin: 0 10px;
-	padding: 0 32px;
-}
-/* Header */
-header{
-	line-height: 86.5px;
-}
 img {
-	width:80px;
+	width: 180px;
 	height: 80px;
 }
-img,
-.nav {
-	display: inline-block;
+.container {
+	max-width: 2000px;
+	margin: 0 autopx;
+	padding: 0 32px;
+}
+/* Clearfix */
+.clearfix::before, 
+.clearfix::after{
+	content: "";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
 }
 
-.imgcolumn{
-	width:280px;
-	height:180px;
-	display: block;
-	margin: 0 auto;
+/* Header */
+.header {
+background-color: #222946;
+height: 72px;
+line-height: 72px;
+padding: 16px 0;
 }
-
+.brand {
+	float: left;
+}
+.brand img {
+	vertical-align: middle;
+}
 .nav {
-	
-	font-size: 16px;
-	text-align: right;
 	float: right;
 }
-
-.nav a {
+.nav a{
 	font-size: 24px;
+	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-left: 32px;
 }
 
-.columns{
-	display: inline-block;
+/* Article */
+.section {
+	padding: 60px 0;
+	background-color: #e9ecfc;
+}
+.imgcolumn {
+	width: 100%;
+	height: 350px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.col {
+	float: left;
+	width: 30%;
+	margin: 0 1.5%;
+}
+p {
+	font-size: 20px;
+	margin-top: 24px;
+	line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+	background-color: #222946;
+	padding: 32px 0;
+	color: #ffffff;
+}
+.footer small {
+	float: left;
 
 }
-.column1{
-	float: left;
-	width: 540px;
-    height: 550px;
-    padding: 20px;
-    font-size: x-large;
-    color: white;
-    background-color: #FE5349;
-    margin: 26px 0 0 26px;
-    	}
-.column2{
-	float: left;
-    width: 540px;
-    height: 550px;
-    padding: 20px;
-    font-size: x-large;
-    color: white;
-    background-color: #0C8871 ;
-    margin: 26px 0 0 26px;
+.footer nav {
+	float: right;
 }
-.column3{
-	float: left;
-	width: 540px;
-    height: 550px;
-    padding: 20px;
-    font-size: x-large;
-    color: white;
-	background-color: #B601FF;
-	margin: 26px 0 0 26px;
-	}
-	/* Footer */
-	
-	.footer{
-		text-align: center;
-		padding: 32px 0;
-		background-color: gray;
-	}
-	.footer a{
-		margin: 0 16px;
-		color: aquamarine;
-	}
+.footer a{
+font-size: 20px;
+color: #ffffff;
+text-decoration: none;
+margin-left: 32px;
+}
