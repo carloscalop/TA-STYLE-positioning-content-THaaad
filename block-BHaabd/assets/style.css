@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Style */
+
+body {
+	color: #333;
+	background-color: #efefef;
+	font-size: 15px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+h1.title {
+    text-align: center;
+    font-weight: normal;
+    padding: 0;
+    margin: 10;
+    }
+    
+.subhead {
+    font-weight: normal;
+}
+blockquote {
+    margin: 10px 10px;
+    padding: 5px 10px;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 0.2em;
+}
+
+p {
+	margin:0;
+	padding: 0 0 15px 0;
+}
+
+.wrapper {
+	background-color: #fff;
+	color: #444; 
+    width: 950px;
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 200px 40px auto 40px 200px;
+    grid-template-rows: auto ;
+}
+
+.mainnav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 120%;
+}
+
+.mainnav a:link, .mainnav a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.quote {
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.mainnav {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.subhead {
+  grid-row-start: 1;
+  grid-row-end:2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.quote {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
